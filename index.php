@@ -14,6 +14,7 @@ include("crud.php");
         $ano = $fetch['ano'];
         $placa = $fetch['placa'];
         
+        
 
     }else{
         $acao = "cadastrar";

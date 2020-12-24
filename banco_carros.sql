@@ -12,6 +12,8 @@ placa varchar (15)
 );
 
 
+update carro set marca="u",modelo="u",ano="u",placa="u" where id_carro=2;
+
 
 
 

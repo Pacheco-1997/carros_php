@@ -3,7 +3,7 @@
 
 
 include("crud.php");
-$id = 0;
+
 $crud = new Crud();
 
 if($acao=='cadastrar'){
@@ -19,20 +19,22 @@ $crud->insertBanco(
          $placa 
      )
 );
-
+  
 }else{
     $crud->updateBanco(
         "carro",
-        "marca = ?, modelo = ?,  ano = ? , placa = ?",
-        "id_carro = ?",
-        array(
+        "marca=?,modelo=?,ano=?,placa=?",
+        "id_carro=?",
+       $teste =  array(
             $marca,
             $modelo,
             $ano,
             $placa,
-            $id
+            $id  // aqui porra 
+            
         )
     );
+    
 }
 
 header("location: index.php");

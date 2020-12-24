@@ -18,6 +18,7 @@ class Crud extends Conexao{
         }
 
         $this->crud->execute();
+        
     }
 
     // contador de parametros
