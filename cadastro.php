@@ -30,7 +30,7 @@ $crud->insertBanco(
             $modelo,
             $ano,
             $placa,
-            $id  // aqui porra 
+            $id  
             
         )
     );
